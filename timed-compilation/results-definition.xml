@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.4-->
+<PhoronixTestSuite>
+ <ResultsParser>
+    <OutputTemplate>Compile time: #_RESULT_# ms</OutputTemplate>
+    <LineHint>Compile</LineHint>
+    <ResultAfterString>time:</ResultAfterString>
+    <StripFromResult>ms</StripFromResult>
+    <ResultScale>ms</ResultScale>
+    <ResultProportion>LIB</ResultProportion>
+  </ResultsParser>
+</PhoronixTestSuite>

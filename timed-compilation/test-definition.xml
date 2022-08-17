@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE PhoronixTestSuite [
+<!ENTITY taglist SYSTEM "timed-compilation/taglist.xml">
+]>
+<!--Phoronix Test Suite v10.8.4-->
+<PhoronixTestSuite>
+  <TestInformation>
+    <Title>Rust compilation time benchmark</Title>
+    <Description>This test measures how long your project takes to compile</Description>
+    <ResultScale>Milliseconds</ResultScale>
+    <Proportion>LIB</Proportion>
+    <TimesToRun>3</TimesToRun>
+  </TestInformation>
+  <TestProfile>
+    <Version>1.0.0</Version>
+    <SupportedPlatforms>Linux</SupportedPlatforms>
+    <SoftwareType>Utility</SoftwareType>
+    <TestType>Processor</TestType>
+    <License>Free</License>
+    <Status>Verified</Status>
+    <ExternalDependencies>build-utilities, rust, python3</ExternalDependencies>
+    <EnvironmentSize>2</EnvironmentSize>
+    <ProjectURL>https://github.com/michaelb/phoronix-rust-collections</ProjectURL>
+    <Maintainer>Michael Bleuez</Maintainer>
+  </TestProfile>
+  <TestSettings>
+    <Option>
+      <DisplayName>Build mode</DisplayName>
+      <Identifier>mode</Identifier>
+      <Menu>
+        <Entry>
+          <Name>Release</Name>
+          <Value> --release </Value>
+        </Entry>
+        <Entry>
+            <Name>Debug</Name>
+          <Value> --debug  </Value>
+        </Entry>
+      </Menu>
+    </Option>
+    <Option>
+      <DisplayName>Include dependencies build time ?</DisplayName>
+      <Identifier>deps</Identifier>
+      <Menu>
+        <Entry>
+          <Name>Yes</Name>
+          <Value> yes </Value>
+        </Entry>
+        <Entry>
+            <Name>No</Name>
+          <Value> no  </Value>
+        </Entry>
+      </Menu>
+    </Option>
+    <Option>
+      <DisplayName>tag/commit to test ?</DisplayName>
+      <Identifier>tag</Identifier>
+      <Menu>
+        &taglist;
+      </Menu>
+    </Option>
+  </TestSettings>
+</PhoronixTestSuite>
